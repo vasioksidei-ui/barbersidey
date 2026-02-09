@@ -32,6 +32,7 @@ body{
   padding: 30px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
 .btn {
@@ -150,4 +151,34 @@ body{
 
 .section {
   margin-top: 80px;
+}
+
+/* Галерея */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+  margin-top: 15px;
+}
+
+.gallery img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover{
+  transform: scale(1.04);
+}
+
+.gallery img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
